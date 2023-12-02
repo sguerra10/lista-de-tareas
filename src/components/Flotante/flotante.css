@@ -1,0 +1,25 @@
+.footer {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    text-align: left;
+    background: rgba(221, 213, 213, 0.7);
+    padding: 8px 24px;
+    border-radius: 32px;
+    opacity: .95;
+  
+  }
+  .footer p{
+    font-size: 1.3rem;
+    font-family: roboto;
+  }
+  .footer span {
+    font-size: 1.3rem;
+    color: #09f;
+    opacity: .8;
+  }
+  
+  .footer h4, .footer h5 {
+    margin: 0;
+    display: flex;
+  }

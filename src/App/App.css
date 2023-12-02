@@ -1,0 +1,29 @@
+:root{
+  --DarkGreenBlack: #014040;
+  --DarkGreen: #02735E;
+  --GreenLigth: #03A678;
+  --orangeZanahori: #F27405;
+  --RedDark: #731702;
+}
+body, html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  min-height: 100%;
+  height: auto;
+
+
+}
+
+.containerFooter{
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+.Cargando{
+  font-size: 2rem;
+  color: var(--orangeZanahori)
+}
