@@ -1,12 +1,11 @@
-
-import { useContext } from 'react'
 import './flotante.css'
-import { TaskContext } from '../../context/TaskProvider'
-export function Flotante () {
-const {todoTotal,counterTotal} = useContext(TaskContext)
+export function Flotante ({value}) {
+  // const { filters } = useFilters()
+
   return (
     <footer className='footer'>
-      <p> You have pending  <span> { counterTotal }</span> talks than <span>  {todoTotal} </span> </p>
+      <h4> Prueba técnica de React ⚛️ － {value} <span>@psicoDevp</span></h4>
+      <h5>Listas de todos ⚛️</h5>
     </footer>
   )
 }

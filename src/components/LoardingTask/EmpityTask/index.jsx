@@ -2,7 +2,6 @@ import React from 'react'
 import './style.css'
 export const EmpityTask = () => {
   return (
-
     <div className='Container'>
       <div class="card">
         <div class="align">
@@ -10,10 +9,9 @@ export const EmpityTask = () => {
           <span class="yellow"></span>
           <span class="green"></span>
         </div>
-        <h1>Welcome Hover me </h1>
+        <h1>Bienvenidos </h1>
         <p>
-       
-TodoApp is a dedicated app to help you organize your time and tasks of any type and purpose. Seize your day with TodoApp and make the most out of it.
+        todoApp es una app dedicada para organizar tu tiempo y tus tareas de cualquier tipo y proposito,  aprovecha tu dia con todoApp.
         </p>
       </div>
       <div className="typewriter">

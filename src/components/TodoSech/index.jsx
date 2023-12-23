@@ -3,7 +3,7 @@ import { BtnAdd } from '../botones/BtnAdd'
 import './todoSeach.css'
 import { TaskContext } from '../../context/TaskProvider'
 
-  export const TodoSech = () => {
+export const TodoSech = () => {
   const { addTodo } = useContext(TaskContext);
   const [value, setValue] = useState('Ingrese un todo');
 
@@ -14,13 +14,13 @@ import { TaskContext } from '../../context/TaskProvider'
 
   const handleOnClick = () => {
     addTodo(value)
-    setValue('')
+    setValue('Ingrese un nuevo todo')
   }
 
   return (
     <div className='todo-seach_container'>
       <input value={value} type="text" name="addNewTodo" id="addTodo" placeholder={'Add your new todo'} onChange={handleOnChage} />
-      <BtnAdd className='btn-add'  handleOnClick={handleOnClick} />
+      <BtnAdd handleOnClick={handleOnClick} />
     </div>
   )
 }

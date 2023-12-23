@@ -1,17 +1,15 @@
 import './App.css'
-import {AppUI} from '../App/AppUI.jsx'
+import { AppUI } from './AppUI'
 import { TaskProvider } from '../context/TaskProvider'
-import { ChakraProvider } from '@chakra-ui/react'
 function App() {
 
 
   return (
+
     <>
-    <ChakraProvider>
-      <TaskProvider>
+    <TaskProvider>
         <AppUI />
-      </TaskProvider>
-    </ChakraProvider>
+    </TaskProvider>
     </>
 
   )

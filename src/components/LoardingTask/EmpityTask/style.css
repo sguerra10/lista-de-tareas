@@ -3,13 +3,13 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 30px;
+    margin: 50px;
     gap: 20px;
 }
 .typewriter {
     --blue: #5C86FF;
     --blue-dark: #275EFE;
-    --key: #09df5f;
+    --key: #fff;
     --paper: #EEF0FD;
     --text: #D3D4EC;
     --tool: #FBC56C;
@@ -242,20 +242,23 @@
     width: 300px;
     height: 150px;
     padding: 0.5rem;
-    background: var(--GreenLigth);
+    background: rgba(198, 198, 198, 0.34);
     border-radius: 8px;
+    backdrop-filter: blur(5px);
     border-bottom: 3px solid rgba(255, 255, 255, 0.440);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(10deg);
     transition: .4s;
     overflow: hidden;
-    color: rgb(3, 2, 2);
+    color: white;
   }
+  
   .card:hover {
     height: auto;
     transform: skew(0deg);
   }
+  
   .align {
     padding: 1rem;
     display: flex;
@@ -295,6 +298,6 @@
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
   }
   .card p{
-    font-family: monospace;
+    font-family: fantasy;
   }
   

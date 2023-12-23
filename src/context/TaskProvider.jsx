@@ -14,12 +14,13 @@ function TaskProvider  ({ children }) {
     error,
     loading
   } = useLocalStorage('TODOS_V1', []);
+
   const [statusTalks, setStatusTalks] = React.useState(false)
-  function addTodo(title,nombre) {
+
+  function addTodo(nombre) {
 
     const newTodo = {
       id: crypto.randomUUID(),
-      title: title,
       nombre: nombre,
       status: statusTalks
     }
@@ -47,26 +48,18 @@ function TaskProvider  ({ children }) {
       saveItemStorage(sechTask)
     }
   }
-  const changeTask = (ids,value) => {
-    const sechTask = [...tasks];
-
-    const filter = sechTask.find((task)=> task.id === ids);
-    filter.nombre = value;
-    saveItemStorage(sechTask);
-  }
-
   const todoTotal = tasks.length
   const counter = tasks.filter((todo) => todo.status === false);
   const counterTotal = counter.length
- 
   return (
+
     <TaskContext.Provider
       value={{
         addTodo,
         deleteTodo,
         changeStatus,
         todoTotal, counterTotal,
-        value, tasks, loading, error, changeTask
+        value, tasks, loading, error
       }}>
       {children}
     </TaskContext.Provider>
